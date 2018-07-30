@@ -46,6 +46,7 @@ Linker Tools Warning LNK4221
 命令行如下：
 
 ::
+
     lib /OUT:filename.lib input1.lib input2.lib ...
 
 参考：
