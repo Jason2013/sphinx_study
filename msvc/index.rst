@@ -56,14 +56,3 @@ Linker Tools Warning LNK4221
 - `[CMake] Merge two static libraries <https://cmake.org/pipermail/cmake/2010-October/040032.html>`_
 
 - `Overview of LIB <https://msdn.microsoft.com/en-us/library/0xb6w1f8.aspx>`_
-
-
-
-
-
-
-
-
-
-
-
