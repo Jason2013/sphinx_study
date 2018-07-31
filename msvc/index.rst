@@ -31,6 +31,87 @@ Microsoft VC++ 经验技巧
 Linker Tools Warning LNK4221
 ----------------------------
 
+有如下两个 C++ 源文件：
+
+a.cpp
+
+.. code-block:: c++
+
+    // a.cpp
+    #include <atlbase.h>
+
+b.cpp
+
+.. code-block:: c++
+
+    // b.cpp
+    #include <atlbase.h>
+    int func1()
+    {
+        return 0;
+    }
+
+先将源文件编译成目标文件：
+
+::
+
+    cl /c a.cpp b.cpp
+    
+当用如下命令行构建库的时候，会出现警告：
+
+::
+
+    link /lib /out:test.lib a.obj b.obj
+
+
+当 a.cpp 与 b.cpp 中的 public symbol 有重复时，有下例 4 种情况，对构建库及应用的影响如下：
+
+1. a.cpp 中的 public symbol 多于 b.cpp 中的，优先 b.obj 时：
+
+   ::
+
+     a
+     a b
+     a b
+
+   链接库时，出现的警告信息如下：
+
+   ::
+
+     link /lib /out:test.lib a.obj b.obj
+     a.obj : warning LNK4006: "int __cdecl func1(void)" (?func1@@YAHXZ) already defined in b.obj; second definition ignored
+
+   当应用仅引用 a.cpp 和 b.cpp 中共同的符号时，将使用 b.cpp 中的符号，链接成功。
+
+   ::
+
+     link main.obj test.lib
+
+   当应用引用 a.cpp 有而 b.cpp 中没有符号时，将引发如下错误：
+
+   ::
+
+     test.lib(a.obj) : error LNK2005: "int __cdecl func1(void)" (?func1@@YAHXZ) already defined in test.lib(b.obj)
+     main.exe : fatal error LNK1169: one or more multiply defined symbols found
+
+#. a.cpp 中的 public symbol 多于 b.cpp 中的，优先使用 a.obj 时：
+
+   ::
+
+       a
+     b a
+     b a
+
+   链接库时，出现的警告信息如下：
+
+   ::
+
+     b.obj : warning LNK4006: "int __cdecl func1(void)" (?func1@@YAHXZ) already defined in a.obj; second definition ignored
+     b.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+
+   应用将使用 a.cpp 中的符号，链接成功。
+
+
 参考：
 ^^^^^^
 
