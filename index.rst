@@ -12,8 +12,6 @@ Welcome to My Great Book's documentation!
 
    cmake/index
    msvc/index
-   ch01/index
-   ch02/index
 
 我是一级标题
 ============

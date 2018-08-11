@@ -24,6 +24,27 @@ target 的 ``TYPE`` 属性为“只读”，不可以更改。
 ^^^^^^
 - `TYPE <https://cmake.org/cmake/help/v3.12/prop_tgt/TYPE.html>`_
 
+CMAKE_TOOLCHAIN_FILE was not used by the project
+------------------------------------------------
+
+用 CMake 构建工程文件时，会出现如下警告信息：
+
+::
+
+  CMake Warning:
+    Manually-specified variables were not used by the project:
+
+      CMAKE_TOOLCHAIN_FILE
+
+This is the standard warning gives you when you're giving it a command line option it's not using. That is giving -DFOO=bar to cmake when the CMakeLists.txt doesn't use FOO variable.
+
+Now, that's a bit of a special case here: CMAKE_TOOLCHAIN_FILE is used by CMake the first time you're configuring your build, but as you can't change the toolchain for an already configured build, it's ignored every other time, thus the warning.
+
+
+参考：
+^^^^^^
+- `CMAKE_TOOLCHAIN_FILE was not used by the project <https://stackoverflow.com/questions/14757506/cmake-toolchain-file-was-not-used-by-the-project>`_
+
 add_custom_target 的技巧
 ---------------------
 
