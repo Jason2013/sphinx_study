@@ -23,3 +23,13 @@ target 的 ``TYPE`` 属性为“只读”，不可以更改。
 参考：
 ^^^^^^
 - `TYPE <https://cmake.org/cmake/help/v3.12/prop_tgt/TYPE.html>`_
+
+add_custom_target 的技巧
+---------------------
+
+自定义 ``target`` 被认为总是过期，即使它有生成文件。因此，自定义 ``target`` 总是会被生成。
+
+
+参考：
+^^^^^^
+- `TYPE <https://cmake.org/cmake/help/v3.12/command/add_custom_target.html>`_
