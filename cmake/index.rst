@@ -50,6 +50,7 @@ add_custom_target 的技巧
 
 自定义 ``target`` 被认为总是过期，即使它有生成文件。因此，自定义 ``target`` 总是会被生成。
 
+自定义 ``target`` 的 ``TYPE`` 为 ``UTILITY`` ，无法将其做为某个应用的依赖库，如： ``target_link_libraries(target <user_defined_target>)`` 。
 
 参考：
 ^^^^^^
