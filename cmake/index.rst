@@ -32,4 +32,4 @@ add_custom_target 的技巧
 
 参考：
 ^^^^^^
-- `TYPE <https://cmake.org/cmake/help/v3.12/command/add_custom_target.html>`_
+- `add_custom_target <https://cmake.org/cmake/help/v3.12/command/add_custom_target.html>`_
