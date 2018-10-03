@@ -120,11 +120,6 @@ latex_elements = {
     # Latex figure (float) alignment
     #
     # 'figure_align': 'htbp',
-
-'preamble' : r'''
-  \usepackage[UTF8,fontset=windows]{ctex} % Chinese
-  \hypersetup{bookmarks,pdfstartview=FitH}
-        ''',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
