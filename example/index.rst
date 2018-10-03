@@ -154,6 +154,7 @@ The function :py:func:`spam` does a similar thing.
 * `Hugo <https://gohugo.io/>`_
 * `Hexo <https://hexo.io/>`_
 * `pelican <https://blog.getpelican.com/>`_
+* `Hyde <http://hyde.github.io>`_
 
 :jellky: 基于 Ruby 开发，是 github pages 的默认页面生成器。
 
@@ -162,3 +163,5 @@ The function :py:func:`spam` does a similar thing.
 :Hexo: 生成页面速度较快，支持 Markdown 和 Octopress 插件。
 
 :pelican: 基于 Python 开发，默认支持 reStructuredText ，通过插件支持 Markdown 。
+
+:Hyde: 基于 Python 开发，有评论说文档支持不够友好。
