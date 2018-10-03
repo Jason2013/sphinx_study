@@ -17,6 +17,7 @@ Welcome to My Great Book's documentation!
    网易新闻 <http://news.163.com>
    msvc/index
    网易新闻 <http://news.163.com>
+   example/index
 
 我是一级标题
 ============
@@ -115,6 +116,21 @@ Today is |today|
 
    `GNU tar manual, Basic Tar Format <http://link>`_
       Documentation for tar archive files, including GNU tar extensions.
+
+.. centered:: LICENSE AGREEMENT
+
+Running the program needs a license.
+
+.. py:function:: spam(eggs)
+                 ham(eggs)
+
+   Spam or ham the foo.
+
+.. py:function:: filterwarnings(action, message='', category=Warning, \
+                                module='', lineno=0, append=False)
+   :noindex:
+
+请参考： :ref:`merge_libs`
 
 Indices and tables
 ==================
