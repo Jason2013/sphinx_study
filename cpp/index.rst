@@ -58,5 +58,5 @@ C++ 读写二进制文件
 ^^^^^^
 
 - `Reading and writing binary file <https://stackoverflow.com/questions/5420317/reading-and-writing-binary-file>`_
-_ `C++ Binary File I/O <http://courses.cs.vt.edu/~cs2604/fall00/binio.html>`_
-_ `C++ Programming Examples <https://codescracker.com/cpp/program/cpp-programming-examples.htm>`_
+- `C++ Binary File I/O <http://courses.cs.vt.edu/~cs2604/fall00/binio.html>`_
+- `C++ Programming Examples <https://codescracker.com/cpp/program/cpp-programming-examples.htm>`_
