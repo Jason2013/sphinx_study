@@ -18,6 +18,7 @@ Welcome to My Great Book's documentation!
    msvc/index
    网易新闻 <http://news.163.com>
    example/index
+   cpp/index
 
 我是一级标题
 ============
