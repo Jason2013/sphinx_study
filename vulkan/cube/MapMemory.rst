@@ -27,7 +27,7 @@ To retrieve a host virtual address pointer to a region of a mappable memory obje
 
 要获取一个指向可映射 memory object 的 host 虚拟地址指针，调用：
 
-.. code-block: cpp
+.. code-block:: cpp
 
    VkResult vkMapMemory(
        VkDevice          device,
@@ -49,6 +49,28 @@ multiple of ``VkPhysicalDeviceLimits::nonCoherentAtomSize``.
 
 While a range of device memory is mapped for host access, the application is responsible for
 synchronizing both device and host access to that memory range.
+
+.. code-block:: cpp
+
+   void vkGetImageSubresourceLayout(
+       VkDevice                        device,
+       VkImage                          image,
+       const VkImageSubresource* pSubresource,
+       VkSubresourceLayout*           pLayout);
+
+   typedef struct VkImageSubresource {
+       VkImageAspectFlags aspectMask;
+       uint32_t             mipLevel;
+       uint32_t           arrayLayer;
+   } VkImageSubresource;
+
+   typedef struct VkSubresourceLayout {
+       VkDeviceSize     offset;
+       VkDeviceSize       size;
+       VkDeviceSize   rowPitch;
+       VkDeviceSize arrayPitch;
+       VkDeviceSize depthPitch;
+   } VkSubresourceLayout;
 
 .. Vulkan Cube 简介
 .. ----------------
