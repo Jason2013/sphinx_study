@@ -32,3 +32,13 @@ Links
 * GitHub
 
   * `datenwolf/linmath.h <https://github.com/datenwolf/linmath.h>`_ - A small library for linear math as required for computer graphics 
+
+* GitHub Repository Mirrors
+
+  +------------------+-------------------+
+  | GitHub           | Gitee             |
+  +==================+===================+
+  | GitHub           | Gitee             |
+  +------------------+-------------------+
+
+
