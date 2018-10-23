@@ -35,10 +35,23 @@ Links
 
 * GitHub Repository Mirrors
 
-  +------------------+-------------------+
-  | GitHub           | Gitee             |
-  +==================+===================+
-  | GitHub           | Gitee             |
-  +------------------+-------------------+
-
+  +-------------------------------------------------------+------------------------------------------------------+
+  | GitHub                                                | Gitee                                                |
+  +=======================================================+======================================================+
+  | https://github.com/KhronosGroup/Vulkan-Docs           | https://gitee.com/chenchang/Vulkan-Docs              |
+  +-------------------------------------------------------+------------------------------------------------------+
+  | https://github.com/LunarG/VulkanSamples               | https://gitee.com/chenchang/VulkanSamples            |
+  +-------------------------------------------------------+------------------------------------------------------+
+  | https://github.com/Microsoft/DirectX-Graphics-Samples | https://gitee.com/chenchang/DirectX-Graphics-Samples |
+  +-------------------------------------------------------+------------------------------------------------------+
+  | https://github.com/Overv/VulkanTutorial               | https://gitee.com/chenchang/VulkanTutorial           |
+  +-------------------------------------------------------+------------------------------------------------------+
+  | https://github.com/SaschaWillems/Vulkan               | https://gitee.com/chenchang/Vulkan                   |
+  +-------------------------------------------------------+------------------------------------------------------+
+  | https://github.com/walbourn/directx-sdk-samples       | https://gitee.com/chenchang/directx-sdk-samples      |
+  +-------------------------------------------------------+------------------------------------------------------+
+  | https://github.com/google/googletest                  | https://gitee.com/chenchang/googletest               |
+  +-------------------------------------------------------+------------------------------------------------------+
+  | https://github.com/google/KhronosGroup                | https://gitee.com/chenchang/KhronosGroup             |
+  +-------------------------------------------------------+------------------------------------------------------+
 
