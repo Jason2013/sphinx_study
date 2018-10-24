@@ -52,6 +52,5 @@ Links
   +-------------------------------------------------------+------------------------------------------------------+
   | https://github.com/google/googletest                  | https://gitee.com/chenchang/googletest               |
   +-------------------------------------------------------+------------------------------------------------------+
-  | https://github.com/google/KhronosGroup                | https://gitee.com/chenchang/KhronosGroup             |
+  | https://github.com/opengl-tutorials/ogl               | https://gitee.com/chenchang/ogl                      |
   +-------------------------------------------------------+------------------------------------------------------+
-
