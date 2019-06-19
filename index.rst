@@ -133,7 +133,7 @@ Running the program needs a license.
                                 module='', lineno=0, append=False)
    :noindex:
 
-请参考： :ref:`merge_libs`
+.. 请参考： :ref:`merge_libs`
 
 Indices and tables
 ==================

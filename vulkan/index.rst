@@ -12,6 +12,7 @@ Vulkan 学习文档
 
    cube/index
    cube/MapMemory
+.. vulkan_fast_paths/index
 ..    ch01/index
 ..    ch02/index
 

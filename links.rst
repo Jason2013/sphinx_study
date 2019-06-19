@@ -10,7 +10,7 @@ Links
 * OpenGL
 
   * `欢迎来到OpenGL的世界 <https://learnopengl-cn.github.io/>`_ https://learnopengl.com/ 的中文翻译版（推荐阅读）
-  * `欢迎来到OpenGL的世界 <https://learnopengl-cn.readthedocs.io/zh/latest/>`_ https://learnopengl.com/ 的中文翻译版（内容有问题，图片显示不全）
+  * `欢迎来到OpenGL的世界2 <https://learnopengl-cn.readthedocs.io/zh/latest/>`_ https://learnopengl.com/ 的中文翻译版（内容有问题，图片显示不全）
   * https://github.com/JoeyDeVries/LearnOpenGL https://learnopengl.com/ 的代码
   * `OpenGL学习脚印-AssImp模型加载 <https://blog.csdn.net/wangdingqiaoit/article/details/52014321>`_
   * `Order Independent Transparency In OpenGL 4.x <http://on-demand.gputechconf.com/gtc/2014/presentations/S4385-order-independent-transparency-opengl.pdf>`_
