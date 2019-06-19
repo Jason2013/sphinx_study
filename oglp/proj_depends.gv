@@ -1,3 +1,63 @@
 digraph {
-    a -> b -> c;
+    rankdir="LR";
+    subgraph cluster_icd {
+        label="icd";
+        subgraph cluster_scl {
+            label="scl";
+            oglp_glsl_compiler;
+            oglp_spirv_compiler;
+        }
+        subgraph cluster_wsi {
+            label="wsi";
+            wgl;
+        }
+        glapi;
+        glcore;
+        utils;
+    }
+    subgraph cluster_imported {
+        label="imported";
+        subgraph cluster_bil {
+            label="bil";
+            bil;
+        }
+        subgraph cluster_glslang {
+            label="glslang";
+            glslang;
+            OGLCompiler;
+            OSDependent;
+            SPIRV;
+            SPVRemapper;
+        }
+        subgraph cluster_pal {
+            label="pal";
+            addrlib;
+            cwpack;
+            gpuopen;
+            metrohash;
+            pal;
+            vam;
+        }
+        subgraph cluster_sc {
+            label="sc";
+            sc;
+            sp3;
+        }
+        subgraph cluster_spirv {
+            label="spirv";
+            spirv;
+        }
+    }
+    sc -> sp3;
+    pal -> addrlib;
+    pal -> cwpack;
+    pal -> gpuopen;
+    pal -> metrohash;
+    pal -> vam;
+    pal -> sc;
+
+    glapi -> utils;
+    glapi -> oglp_spirv_compiler;
+    glapi -> oglp_glsl_compiler;
+    glapi -> setupapi;
 }
