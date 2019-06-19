@@ -15,6 +15,9 @@ OGLP 学习文档
 ..    ch01/index
 ..    ch02/index
 
+.. image:: proj_depends.svg
+    :align: center
+
 .. The function :py:func:`spam` does a similar thing.
 .. 
 .. 静态网页生成器
