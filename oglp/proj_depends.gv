@@ -119,16 +119,29 @@ digraph {
             spirv_cross -> spirv_cross_core;
         }
     }
-    /* sc -> sp3; */
-    /* pal -> addrlib; */
-    /* pal -> cwpack; */
-    /* pal -> gpuopen; */
-    /* pal -> metrohash; */
-    /* pal -> vam; */
-    /* pal -> sc; */
 
+    edge [color="red"];
     glapi -> utils;
     glapi -> oglp_spirv_compiler;
     glapi -> oglp_glsl_compiler;
     glapi -> setupapi;
+    glapi -> pal;
+    glapi -> sc;
+    glapi -> glcore;
+    glapi -> wgl;
+    glapi -> synchronization;
+    glapi -> spirv_cross_glsl;
+    glapi -> spirv_cross_core;
+    glapi -> SPIRV_Tools;
+    glapi -> bil;
+    glapi -> SPIRV;
+    glapi -> glslang;
+    glapi -> OSDependent;
+    glapi -> OGLCompiler;
+    glapi -> sp3;
+    glapi -> addrlib;
+    glapi -> vam;
+    glapi -> metrohash;
+    glapi -> cwpack;
+    glapi -> gpuopen;
 }
