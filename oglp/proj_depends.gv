@@ -1,5 +1,6 @@
 digraph {
     rankdir="LR";
+    node [style="filled",fillcolor="#8080FF"];
     subgraph cluster_icd {
         label="icd";
         subgraph cluster_scl {
@@ -11,7 +12,7 @@ digraph {
             label="wsi";
             wgl;
         }
-        glapi;
+        glapi [fillcolor="#FF8080"];
         glcore;
         utils;
     }
@@ -45,16 +46,86 @@ digraph {
         }
         subgraph cluster_spirv {
             label="spirv";
-            spirv;
+            subgraph cluster_SPIRV_Tools {
+                label="SPIRV-Tools";
+                node [fillcolor="#FF8080"]; /* Application */
+                spirv_as;
+                spirv_cfg;
+                spirv_dis;
+                spirv_link;
+                spirv_opt;
+                spirv_stats;
+                node [fillcolor="#8080FF"]; /* Static Library */
+                SPIRV_Tools;
+                node [fillcolor="#FFFF80"]; /* Utility*/
+                spirv_tools_build_version;
+                node [fillcolor="#FF8080"]; /* Application */
+                spirv_tools_cpp_example;
+                node [fillcolor="#FFFF80"]; /* Utility*/
+                spirv_tools_debuginfo;
+                spirv_tools_header_DebugInfo;
+                node [fillcolor="#8080FF"]; /* Static Library */
+                SPIRV_Tools_link;
+                SPIRV_Tools_opt;
+                node [fillcolor="#80FF80"]; /* Dynamic Library */
+                SPIRV_Tools_shared;
+                node [fillcolor="#FFFF80"]; /* Utility*/
+                spirv_tools_spv_amd_gcn_shader;
+                spirv_tools_spv_amd_shader_ballot;
+                spirv_tools_spv_amd_shader_explicit_vertex_parameter;
+                spirv_tools_spv_amd_shader_trinary_minmax;
+                spirv_tools_vimsyntax;
+                node [fillcolor="#FF8080"]; /* Application */
+                spirv_val;
+
+                spirv_as -> SPIRV_Tools;
+                spirv_cfg -> SPIRV_Tools;
+                spirv_dis -> SPIRV_Tools;
+
+                spirv_link -> SPIRV_Tools;
+                spirv_link -> SPIRV_Tools_link;
+                spirv_link -> SPIRV_Tools_opt;
+
+                spirv_opt -> SPIRV_Tools;
+                spirv_opt -> SPIRV_Tools_opt;
+
+                spirv_stats -> SPIRV_Tools;
+
+                spirv_tools_cpp_example -> SPIRV_Tools;
+                spirv_tools_cpp_example -> SPIRV_Tools_opt;
+
+                spirv_val -> SPIRV_Tools;
+            }
+            node [fillcolor="#FF8080"]; /* Application */
+            spirv_cross;
+            node [fillcolor="#8080FF"]; /* Static Library */
+            spirv_cross_core;
+            spirv_cross_cpp;
+            spirv_cross_glsl;
+            spirv_cross_hlsl;
+            spirv_cross_msl;
+            spirv_cross_reflect;
+            spirv_cross_util;
+            node [fillcolor="#FFFF80"]; /* Utility*/
+            spirv_tools_pkg_config;
+            spirv_tools_shared_pkg_config;
+
+            spirv_cross -> spirv_cross_glsl;
+            spirv_cross -> spirv_cross_hlsl;
+            spirv_cross -> spirv_cross_cpp;
+            spirv_cross -> spirv_cross_reflect;
+            spirv_cross -> spirv_cross_msl;
+            spirv_cross -> spirv_cross_util;
+            spirv_cross -> spirv_cross_core;
         }
     }
-    sc -> sp3;
-    pal -> addrlib;
-    pal -> cwpack;
-    pal -> gpuopen;
-    pal -> metrohash;
-    pal -> vam;
-    pal -> sc;
+    /* sc -> sp3; */
+    /* pal -> addrlib; */
+    /* pal -> cwpack; */
+    /* pal -> gpuopen; */
+    /* pal -> metrohash; */
+    /* pal -> vam; */
+    /* pal -> sc; */
 
     glapi -> utils;
     glapi -> oglp_spirv_compiler;
