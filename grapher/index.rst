@@ -10,13 +10,16 @@ OGLP 学习文档
    :maxdepth: 2
    :caption: Contents:
 
+   microbench.rst
+   shaderbench.rst
+   framebench.rst
 ..   cube/index
 ..   cube/MapMemory
 ..    ch01/index
 ..    ch02/index
 
-.. image:: proj_depends.svg
-    :align: center
+.. .. image:: proj_depends.svg
+..     :align: center
 
 .. The function :py:func:`spam` does a similar thing.
 .. 
