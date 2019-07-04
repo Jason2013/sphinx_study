@@ -14,6 +14,7 @@ Welcome to My Great Book's documentation!
    :numbered:
 
    oglp/index
+   grapher/index
    cmake/index
    msvc/index
    example/index
