@@ -1,0 +1,28 @@
+digraph {
+    rankdir="LR";
+    subgraph cluster_browser {
+        label="Browser";
+        subgraph cluster_php {
+            label="subPages/compileReportBatchID.php";
+            php1 [shape="octagon",label="generate"];
+            input1 [label="hidden:valMachineIDList\nint 列表"]
+            input2 [label="hidden:valCardSysList\n显卡、系统名称列表"]
+        }
+        subgraph cluster_js {
+            label="jslibs/some/parseTestResult.js";
+            node [style="rounded",shape="box"]; /* function */
+            js1 [label="swtGenerateRoutineReport"];
+            js2 [label="swtDoGenerateFlatData"];
+        }
+    }
+    subgraph cluster_server {
+        label="Server";
+        subgraph cluster_server1 {
+            label="phplibs/createReport/swtGenTempFlatDataNoise.php";
+            p2 [label="php"];
+        }
+    }
+    php1 -> js1;
+    js1 -> js2;
+    js2 -> p2;
+}

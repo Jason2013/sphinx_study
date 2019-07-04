@@ -13,6 +13,10 @@ Grapher 介绍
 相关文件介绍
 ------------
 
-   ${ROOT}\phplibs\generalLibs\code01.php
+   ``${ROOT}\phplibs\generalLibs\code01.php``
 
    基本信息配置文件，包含：数据库连接信息。
+
+   ``phplibs/userManage/swtUserManager.php``
+
+   用户及管理员信息类型。调试阶段，建议将 ``isManager()`` 设为始终返回 ``true`` 。

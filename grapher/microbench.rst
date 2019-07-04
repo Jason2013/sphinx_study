@@ -10,3 +10,5 @@ Microbench 学习文档
    :maxdepth: 2
    :caption: Contents:
 
+.. image:: microbench/microbench_report.svg
+    :align: center
