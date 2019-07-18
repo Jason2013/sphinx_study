@@ -12,3 +12,5 @@ Microbench 学习文档
 
 .. image:: microbench/microbench_report.svg
     :align: center
+
+`图片地址 <microbench/microbench_report.svg>`_
